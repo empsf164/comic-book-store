@@ -42,6 +42,11 @@ body.dark-mode .form-control {
     color: var(--color-text-primary);
 }
 
+body.dark-mode .form-control option {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+}
+
 body.dark-mode .form-control:focus {
     border-color: var(--color-secondary);
 }

@@ -120,4 +120,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Password visibility toggle
+    const passwordFields = document.querySelectorAll('input[type="password"]');
+    passwordFields.forEach(field => {
+        const container = field.parentElement;
+        if (container) {
+            const toggleBtn = container.querySelector('.password-toggle');
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', () => {
+                    const eyeIcon = toggleBtn.querySelector('.eye-icon');
+                    const eyeOffIcon = toggleBtn.querySelector('.eye-off-icon');
+                    
+                    if (field.type === 'password') {
+                        field.type = 'text';
+                        if (eyeIcon) eyeIcon.style.display = 'none';
+                        if (eyeOffIcon) eyeOffIcon.style.display = 'block';
+                    } else {
+                        field.type = 'password';
+                        if (eyeIcon) eyeIcon.style.display = 'block';
+                        if (eyeOffIcon) eyeOffIcon.style.display = 'none';
+                    }
+                });
+            }
+        }
+    });
 });
