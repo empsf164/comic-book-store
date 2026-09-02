@@ -14,6 +14,18 @@
 
 <body>
     <div class="auth-wrapper">
+        <!-- Top Right Theme Toggle -->
+        <div class="auth-top-actions">
+            <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode">
+                <span id="theme-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </span>
+            </button>
+        </div>
+
         <div class="auth-card">
             <!-- Logo -->
             <div style="text-align: center; margin-bottom: 2rem;">
@@ -137,44 +149,33 @@
                 </button>
             </div>
             <div style="margin-bottom: 2rem;">
-                <label
-                    style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.5;">
-                    <input type="checkbox" required style="margin-top: 0.25rem; cursor: pointer; flex-shrink: 0;">
-                    <span>I agree to the <a href="#" class="text-primary"
-                            style="font-weight: 500; text-decoration: none;">Terms of Service</a> and <a href="#"
-                            class="text-primary" style="font-weight: 500; text-decoration: none;">Privacy
-                            Policy</a></span>
-                </label>
-            </div>
-            <button type="submit" class="btn btn-primary"
-                style="width: 100%; padding: 0.875rem 1.5rem; font-size: 1rem; font-weight: 600; margin-bottom: 1.5rem;">Create
-                Account</button>
-            </form>
 
-            <!-- Login Link -->
-            <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--color-border);">
-                <span style="color: var(--color-text-secondary); font-size: 0.875rem;">Already have an account? </span>
-                <a href="login.html" class="text-primary"
-                    style="font-weight: 600; text-decoration: none; font-size: 0.875rem;">Login</a>
+
+                <!-- Login Link -->
+                <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--color-border);">
+                    <span style="color: var(--color-text-secondary); font-size: 0.875rem;">Already have an account?
+                    </span>
+                    <a href="login.html" class="text-primary"
+                        style="font-weight: 600; text-decoration: none; font-size: 0.875rem;">Login</a>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="assets/js/theme-toggle.js"></script>
-    <script src="assets/js/main.js"></script>
-    <style>
-        .btn-social:hover {
-            background: var(--color-background) !important;
-            border-color: var(--color-primary) !important;
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-sm);
-        }
+        <script src="assets/js/theme-toggle.js"></script>
+        <script src="assets/js/main.js"></script>
+        <style>
+            .btn-social:hover {
+                background: var(--color-background) !important;
+                border-color: var(--color-primary) !important;
+                transform: translateY(-1px);
+                box-shadow: var(--shadow-sm);
+            }
 
-        .form-control:focus {
-            outline: none;
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
-        }
-    </style>
+            .form-control:focus {
+                outline: none;
+                border-color: var(--color-primary);
+                box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+            }
+        </style>
 </body>
 
 </html>
